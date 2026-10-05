@@ -1,4 +1,5 @@
 /*making the top header smaller to fit the rest of resume*/
 h1 {
-  font-size: 1.85rem; 
+  font-size: 1.85rem;
+  text-align: center;
 }
