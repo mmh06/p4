@@ -8,6 +8,7 @@ h1 {
   font-size: 1.85rem;
   text-align: center;
 }
+
 h2 {
   font-size: 1rem;
   text-align: center;
@@ -18,10 +19,11 @@ h2 {
   /* Overrides the default inline-block behavior */
   margin: 0 auto;
 }
+
 #slide-up-portfolio {
   display: none;
   /* Keep the div hidden on landing */
-  
+
 }
 
 #main-nav {
