@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
+
 </head>
 
 <body>
@@ -20,13 +22,20 @@
     </div>
     <!-- The Trigger Button -->
     <!-- data-toggle must match the ID of the div you want to reveal -->
-    <button class="button" data-toggle="slide-up-div">
-      &#128433; Click For My Portfolio
-    </button>
+    <div class="row align-center">
+      <div class="column">
+        <button class="button" id="revealportfolio" data-toggle="slide-up-portfolio">
+          <i class="fa fa-mouse-pointer" aria-hidden="true"></i> &#128433;  For My Portfolio
+        </button>
+      </div>
+
+
+    </div>
+
 
     <!-- The Revealed Div -->
     <!-- data-toggler specifies the entrance and exit animations -->
-    <div class="callout hidden" id="slide-up-div" data-toggler data-animate="slide-in-up slide-out-down">
+    <div class="callout hidden" id="slide-up-portfolio" data-toggler data-animate="slide-in-up slide-out-down">
       <h4>Revealed Content!</h4>
       <nav id="main-nav">
         <ul>
@@ -59,10 +68,12 @@
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
         <div class="callout">
+          <!--
           <h3>We&rsquo;re stoked you want to try Foundation! </h3>
           <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or
             totally destroy to get going.</p>
           <p>Once you've exhausted the fun in this document, you should check out:</p>
+          -->
           <div class="grid-x grid-padding-x">
             <div class="large-4 medium-4 cell">
               <p><a href="https://get.foundation/sites/docs/">Foundation Documentation</a><br />Everything you need to
