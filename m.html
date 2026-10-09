@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    displaying nearby recent strong earthquakes
+  </title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/sp.js " defer>
+  </script>
+</head>
+
+<body id="m">
+  <nav id="main-nav">
+    <ul>
+      <li>
+        <a href="./">
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="./cssdemo.html">
+          cssDemo
+        </a>
+      </li>
+      <li>
+        <a href="./startupplan.html">
+          Startup Plan
+        </a>
+      </li>
+      <li>
+        <a href="./m.html">
+          Nearby Earthquake
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section id="features-description">
+    <h1>Features Description</h1>
+    <p class="des">
+      The first feature of this webpage is it is centered on your current location.Please allow location access to see
+      this feature
+    </p>
+    <p class="des">
+      The second feature of this webpage is the marker shows the strongest eathquake in 500km of your radius in last 30
+      days
+    </p>
+    <p class="des">
+      The third features is you can see the strongest eartquake nearby for last 30 dates by clicking on a map location
+    </p>
+  </section>
+  <section id="mapgui">
+    <h2>Google map display</h2>
+    <gmp-map id="dmap" center="38.7946,-106.5348" zoom="4" map-id="DEMO_MAP_ID" style="height: 400px">
+    </gmp-map>
+  </section>
+  <!--
+    The `defer` attribute causes the script to execute after the full HTML
+    document has been parsed. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe0hJfFtyjqW678Mmmdkz8EFH2JoNlFbE&libraries=maps&loading=async"
+    defer>
+    </script>
+</body>
+
+</html>

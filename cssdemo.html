@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Demonstrating css effects
+  </title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="js/sp.js " defer></script>
+</head>
+
+<body id="cssdemo">
+  <nav id="main-nav">
+    <ul>
+      <li>
+        <a href="./">
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="./cssdemo.html">
+          cssDemo
+        </a>
+      </li>
+      <li>
+        <a href="./startupplan.html">
+          Startup Plan
+        </a>
+      </li>
+      <li>
+        <a href="./m.html">
+          Nearby Earthquake
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section id="bslider">
+    <h1>Box Slider Demo</h1>
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slide box"><img src="images/butlerlogo.png" alt="logo for our startup for drone butlers"
+            class="circular-image">
+        </div>
+        <div class="slide box"><img src="images/dbutler.png" alt="logo for our startup for drone butlers"
+            class="circular-image">
+        </div>
+        <div class="slide box"><img src="images/demo.png" alt="logo for our startup for drone butlers"
+            class="circular-image">
+        </div>
+      </div>
+      <button id="prevBtn" class="nav-btn">Prev</button>
+      <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+  </section>
+  <section id="basic-css-demo">
+    <h1>
+      Multiple CSS Demonstration
+    </h1>
+    <h2>
+      Demoing basic css for texts
+    </h2>
+    <p>
+      This page will demonstrate css effects on individual elements
+    </p>
+    <p id="font-color-demo">
+      css allows changing the text color
+    </p>
+    <p id="background-color-demo">
+      css allows changing the background-color of a paragraph
+    </p>
+    <p id="text-align-demo">
+      css allows changing the position of a text
+    </p>
+    <p id="font-demo">
+      css allows changing the font of a text
+    </p>
+    <p id="text-size-demo">
+      css allows changing the font size of a text
+    </p>
+  </section>
+  <section id="medium-csss-demo">
+    <h2>
+      Demoing medium level css effecs
+    </h2>
+    <p id="border-demo">
+      css allows changing the border of an element
+    </p>
+    <p class="class-demo">
+      classes in css allows applying multiple styling effects uniformly to multiple elements
+    </p>
+    <p class="class-demo">
+      This is the second paragraph with the same stylings
+    </p>
+    <p class="resize-demo">
+      css allows elements to change size with a changing window size.If viewed from a phone flipping the phone will
+      change the font size of this text
+    </p>
+    <p class="border-demo">
+      All html elements are wrapped inside a rectangle that can be demonstrated using css border property
+    </p>
+    <p class="border-demo box">
+      the beginning and end of a a rectangle that is covered by an HTML element can be manipulated by applying css. This
+      particular HTML element begins at the twenty five percent of the window , with and ends at the seventy five
+      percent of window width.If viewed from a phone; flipping the phone still keeps this box between twenty five and
+      seventy five percent of the window width.
+    </p>
+    <p class="border-demo fixed-box">
+      The height and width of an html element can be determined at a constant value using css .In this case the width
+      and height has been fixed at 400 pixel.It doesn'resize with the window like the last element
+    </p>
+    <p>
+      A list can be displayed horizontally instead of vertically that has been implemented in the next html navigation
+      element
+    </p>
+  </section>
+  <section id="advanced-css-demo">
+    <h2>
+      Demoing advanced css
+    </h2>
+    <nav id="second-nav">
+      <ul>
+        <li>
+          <a href="http://www.yahoo.com">
+            Yahoo!
+          </a>
+        </li>
+        <li>
+          <a href="http://brave.com">
+            Brave
+          </a>
+        </li>
+        <li>
+          <a href="http://msn.com">
+            MSN
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <p>
+      Using css one can make sure a image takes up the entire or fixed percentage of the width of the screen.The image
+      below always spans the entire screen.If viewd from a phone ; flipping the phone will resize the image
+    </p>
+    <img src="images/demo.png" alt="panoramic pic" class="responsive-bounded-img">
+  </section>
+
+
+
+</body>
+
+</html>
