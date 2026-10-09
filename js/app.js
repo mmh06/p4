@@ -1,5 +1,8 @@
 const testing = window.location.pathname.split("/").pop();
 console.log(testing);
+if (!testing){
+    console.log("empty string");
+}
 if (testing === "index.html") {
     $(document).foundation();
 
