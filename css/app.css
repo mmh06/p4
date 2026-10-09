@@ -106,6 +106,18 @@ p,li {
       filter: drop-shadow(0 -2px 3px rgba(0,0,0,0.05));
     }
     /* Base Layout */
+  #edlist {
+    display: flex;
+    flex-direction: column; /* Default: Top to Bottom */
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Reversed Layout Class */
+  #edlist.reversed-order {
+    flex-direction: column-reverse; 
+    
+  }
   #wlist {
     display: flex;
     flex-direction: column; /* Default: Top to Bottom */
@@ -115,5 +127,6 @@ p,li {
 
   /* Reversed Layout Class */
   #wlist.reversed-order {
-    flex-direction: column-reverse; /* Flips the visual order */
+    flex-direction: column-reverse; 
+    
   }
