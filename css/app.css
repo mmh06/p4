@@ -59,7 +59,7 @@ h2 {
   color: #333;
 }
 
-p {
+p,li {
   position: sticky;
   top: 0;
   width: 100%;
