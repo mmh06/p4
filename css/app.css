@@ -106,7 +106,7 @@ p {
       filter: drop-shadow(0 -2px 3px rgba(0,0,0,0.05));
     }
     /* Base Layout */
-  #education {
+  #wlist {
     display: flex;
     flex-direction: column; /* Default: Top to Bottom */
     gap: 10px;
@@ -114,6 +114,6 @@ p {
   }
 
   /* Reversed Layout Class */
-  #education.reversed-order> :not(#edhead):not(#reverse-btn) {
+  #wlist.reversed-order {
     flex-direction: column-reverse; /* Flips the visual order */
   }
