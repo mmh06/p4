@@ -3,7 +3,7 @@ console.log(testing);
 if (!testing){
     console.log("empty string");
 }
-if (testing === "index.html") {
+if (testing === "index.html" || !testing) {
     $(document).foundation();
 
     // Select the button and the container element
