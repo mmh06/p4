@@ -58,3 +58,16 @@ h2 {
   background-color: #ccc;
   color: #333;
 }
+p {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: serif; /* Gives a classic paper feel */
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
