@@ -1,26 +1,457 @@
 /*giving more aesthetic vibe by changing bakcground*/
+.slider-container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide.box {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ddd;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 5px;
+}
+
+#nextBtn {
+  right: 5px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
+  height: 100%;
+  width: 100%;
+  border: 3px solid white;
+  overflow-x: hidden;
+}
+
+#m {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  border: 1px solid red;
+}
+
+#mapgui {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#dmap {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.des {
+  border: 2px solid #333333;
+  color: white;
+  background-color: black;
+}
+
+#splan {
+  margin: 1%;
+  height: 100px;
+  width: 100%;
+  font-size: 12px;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.5;
+  float: left;
+}
+
+#splan {
+  background-image: none;
+}
+
+@media screen and (min-width: 350px) {
+  #splan > :not(#main-nav) {
+    font-family: 'Orbitron', sans-serif;
+    color: purple;
+    margin: 0;
+    padding: 0;
+    float: none;
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 2px #ff4500;
+  }
+
+  #splan {
+    background-image: url("../images/dbutler.png");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  #splan > :not(#main-nav) {
+    font-family: 'Impact', 'Arial Black', system-ui;
+    color: purple;
+    font-weight: 1000;
+    font-size: 2rem;
+    text-shadow: 10px 10px 0 #ff005e, 20px 20px 0 #00d4ff;
+    animation: shadow-dance 9s infinite
+  }
+
+  @keyframes shadow-dance {
+
+    0%,
+    100% {
+      text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    }
+
+    50% {
+      text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+    }
+
+  }
+
+  #splan {
+    background-image: url("../images/dbutler.png");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+}
+
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+
+
+.titular {
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+
+#footwrap {
+  text-align: center;
+}
+
+#top-nav {
+  text-align: center;
+}
+
+#top-nav ul.topUL {
+  display: inline-block;
+  text-align: center;
+}
+
+#font-color-demo {
+  color: blue;
+}
+
+#background-color-demo {
+  background-color: red;
+}
+
+#font-demo {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+#text-align-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-demo {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 200%;
+  color: blue;
+}
+
+.resize-demo {
+  font-size: 5vw;
+}
+
+.border-demo {
+  border-style: solid;
+  border-color: red;
+}
+
+.box {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.fixed-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+#landing-body {
+  color: white;
+  background-image: url("../images/resume-image.png");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.flex-list li {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+}
+
+#top-nav {
+  text-align: center;
+}
+
+#top-nav ul.topUL {
+  display: inline-block;
+  text-align: center;
+}
+
+#font-color-demo {
+  color: blue;
+}
+
+#background-color-demo {
+  background-color: red;
+}
+
+#font-demo {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+#text-align-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-demo {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 200%;
+  color: blue;
+}
+
+.resize-demo {
+  font-size: 5vw;
+}
+
+.border-demo {
+  border-style: solid;
+  border-color: red;
+}
+
+.box {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.fixed-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+.responsive-bounded-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#resource-list li {
+  margin: 3px;
+  border: 3px solid;
+  border-image: repeating-linear-gradient(45deg, #e3dcdc, #e3dcdc 03px, #120202 03px, #120202 06px) 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+#top-nav {
+  text-align: center;
+}
+
+#top-nav ul.topUL {
+  display: inline-block;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+
+/*css for foundaion page*/
+#onlyfoundation{
   background-color: #669999;
 }
 
 /*making the top header smaller to fit the rest of resume*/
-h1 {
+#onlyfoundation h1 {
   font-size: 1.85rem;
   text-align: center;
 }
 
-h2 {
+/*making the top header smaller to fit the rest of resume*/
+#onlyfoundation h2 {
   font-size: 1rem;
   text-align: center;
 }
 
-#revealportfolio {
+/*making the top header smaller to fit the rest of resume*/
+#onlyfoundation #revealportfolio {
   display: block;
   /* Overrides the default inline-block behavior */
   margin: 0 auto;
 }
 
-#slide-up-portfolio {
+/*making the top header smaller to fit the rest of resume*/
+#onlyfoundation #slide-up-portfolio {
   display: none;
   /* Keep the div hidden on landing */
 
@@ -59,7 +490,8 @@ h2 {
   color: #333;
 }
 
-p,li {
+/*making the top header smaller to fit the rest of resume*/
+#onlyfoundation p,#onlyfoundation li {
   position: sticky;
   top: 0;
   width: 100%;
@@ -75,14 +507,14 @@ p,li {
 }
 
 
-#fileheads {
+#onlyfoundation #fileheads {
       position: relative;
       width: 100%;
       height: 10px; /* Thin line representing the top edge of the folder */
       background: #fff;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
-#basic-infos{
+#onlyfoundation #basic-infos{
       position: absolute;
       top: -35px; /* Pulls it up and "out" of the screen viewport */
       left: 40px; /* Positions it horizontally like a real file tab */
@@ -106,7 +538,7 @@ p,li {
       filter: drop-shadow(0 -2px 3px rgba(0,0,0,0.05));
     }
     /* Base Layout */
-  #edlist {
+  #onlyfoundation #edlist {
     display: flex;
     flex-direction: column; /* Default: Top to Bottom */
     gap: 10px;
@@ -114,11 +546,11 @@ p,li {
   }
 
   /* Reversed Layout Class */
-  #edlist.reversed-order {
+  #onlyfoundation #edlist.reversed-order {
     flex-direction: column-reverse; 
     
   }
-  #wlist {
+  #onlyfoundation #wlist {
     display: flex;
     flex-direction: column; /* Default: Top to Bottom */
     gap: 10px;
@@ -126,7 +558,7 @@ p,li {
   }
 
   /* Reversed Layout Class */
-  #wlist.reversed-order {
+  #onlyfoundation #wlist.reversed-order {
     flex-direction: column-reverse; 
     
   }

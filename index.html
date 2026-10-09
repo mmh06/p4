@@ -13,8 +13,32 @@
 </head>
 
 <body>
+  <nav id="main-nav">
+    <ul>
+      <li>
+        <a href="./">
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="./cssdemo.html">
+          cssDemo
+        </a>
+      </li>
+      <li>
+        <a href="./startupplan.html">
+          Startup Plan
+        </a>
+      </li>
+      <li>
+        <a href="./m.html">
+          Nearby Earthquake
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-  <div class="grid-container">
+  <div class="grid-container" id="onlyfoundation">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
         <h1>Welcome to My Resume</h1>
@@ -22,6 +46,7 @@
     </div>
     <!-- The Trigger Button -->
     <!-- data-toggle must match the ID of the div you want to reveal -->
+
     <div class="row align-center">
       <div class="column">
         <button class="button" id="revealportfolio" data-toggle="slide-up-portfolio">
@@ -37,29 +62,9 @@
     <!-- data-toggler specifies the entrance and exit animations -->
     <div class="callout hidden" id="slide-up-portfolio" data-toggler data-animate="slide-in-up slide-out-down">
       <h2>Links to my projects</h2>
-      <nav id="main-nav">
-        <ul>
-          <li>
-            <a href="./">
-              Resume
-            </a>
-          </li>
-          <li>
-            <a href="./cssdemo.html">
-              cssDemo
-            </a>
-          </li>
-          <li>
-            <a href="./startupplan.html">
-              Startup Plan
-            </a>
-          </li>
-          <li>
-            <a href="./m.html">
-              Map to see strong nearby eartquakes
-            </a>
-          </li>
-        </ul>
+      <nav id="second-nav">
+        <a href="https://github.com/mmh06?tab=repositories">&#x1F4C1;&#x1F4C4;&#x1F6E0;</a>
+
       </nav>
       <p></p>
     </div>
@@ -127,13 +132,13 @@
             <div class="large-6 medium-6 cell">
               <section id="work">
                 <div>
-                    <h3>
-                      &#x1F4BC;WORK
-                    </h3>
-                  </div>
+                  <h3>
+                    &#x1F4BC;WORK
+                  </h3>
+                </div>
                 <button id="reverse-work">Reverse Order</button>
                 <div id="wlist">
-                  
+
                   <div class="titular">
                     <p>
                       SOC analyst
