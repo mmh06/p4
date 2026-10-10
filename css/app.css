@@ -573,7 +573,7 @@ h6 {
 }
 
 #second-nav {
-  display: flexbox;
+  display: flex;
   justify-content: center;
 
 }
